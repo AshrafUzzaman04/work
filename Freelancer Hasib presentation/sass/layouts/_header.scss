@@ -1,0 +1,245 @@
+
+
+header{
+    height: 70px;
+    background-color: $white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.164);
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    > .wrapper{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >.logo{
+            line-height: 70px;
+            > i{
+                font-size: 27px;
+                color:$orange
+            }
+            > a{
+                font-size: 27px;
+                color: $black;
+                font-weight: bold;
+                transition: .5s ;
+                &:hover{
+                    color: $orange;
+                }
+            }
+        }
+
+    
+    }
+}
+
+
+.menu-btn{
+    > i {
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+nav{
+    float: right;
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    >input{
+        display: none;
+    }
+
+    >ul{
+        display: flex;
+        >li{
+            > a{
+            position: relative;
+            font-size: 16px;
+            margin: 0 18px;
+            color: $black;
+            font-weight: bold;
+            padding: 5px 8px;
+            transition: 0.3s;
+            &:hover{
+                color: $orange;
+            }
+        }
+        >.home-inactive:after{
+            content: "";
+                position: absolute;
+                background-color: $orange;
+                @include M(100%, 1px);
+                left: 0;
+                bottom: 0;
+                filter: opacity(0);
+                transition: 0.3s;
+        }
+        >.home-inactive:hover:after{
+            filter: opacity(1);
+        }
+    
+        > .home-active{
+            color: $orange;
+            border-bottom: 1px solid $orange;
+        }
+    
+    }
+    > .search-bar{
+        @include search-bar;
+        
+    }
+       
+    }
+
+
+    }
+
+
+.banner-area{
+    @include M(100%, 100vh);
+    top: 70px;
+    background-image:url("../images/Header/back.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    .dark{
+        display: flex;
+        top: 70px;
+        @include M(100%, 100vh);
+        > .banner-area-text{
+            margin: auto 80px;
+    
+            > p{
+                padding-top: 8%;
+                font-size: 2.7rem;
+                line-height: 4rem;
+                color: $white;
+                font-family: Poppins Light;
+            }
+            > span{
+                font-family: poppins;
+            }
+    
+            >.des{
+                font-size: 20px;
+                margin-top: -30px;
+                margin-bottom:70px;
+            }
+    
+            > .buttons{
+                > a{
+                    @include button;
+                }
+                > .b1{
+                    background: $white;
+                    color: $black;
+                    transition: 0.3s;
+                    &:hover{
+                        background: transparent;
+                        color: $white;
+                    }
+                }
+                > .b2{
+                    background: transparent;
+                    color: $white;
+                    transition: 0.3s;
+                    &:hover{
+                        background: $white;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width:1054px){
+
+
+    .logo{
+        >i{
+            font-size: 25px;
+        }
+        > a{
+            font-size: 25px;
+        }
+    }
+
+    .menu-btn{
+        > i {
+            display: block;
+            right: 20px;
+            top: 25px;
+        }
+    }
+    nav{
+        > ul{
+            position: fixed;
+            top: 70px;
+            left: -100%;
+            background: $white;
+            @include M(100%, 100vh);
+            display: block;
+            text-align: center;
+            transition:all 0.3s ease;
+            >li{
+                margin: 40px 0;
+                >.home-active{
+                    border-bottom: none;
+                }
+                >a{
+                    font-size: 20px;
+                    display: block;
+                }
+            }
+        }
+        > .search-bar{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            >input{
+                margin: auto;
+                font-size: 22px;
+            }
+        }
+
+    }
+
+    .banner-area{
+        >.dark{
+            background: linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0.137));
+            >.banner-area-text{
+                >.title{
+                    font-size: 2.4rem;
+                    line-height: 3.5rem;
+                    margin-bottom: 20px;
+                }
+                >.des{
+                    line-height: 2rem;
+                }
+                >.buttons{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+@media only screen and (max-width:478px){
+    .buttons{
+        display: flex;
+        a{
+            margin-top: 15px;
+        }
+    }
+}

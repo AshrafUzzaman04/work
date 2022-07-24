@@ -1,0 +1,510 @@
+.happy-customers{
+    width: 100%;
+    padding: 70px;
+    display: flex;
+    background-color: $white;
+    display: flex;
+   .container1{
+       width: 90%;
+       margin-inline: auto;
+      
+
+       .happy-left{
+           padding-right: 0px;
+           h3{
+               font-size: 35px;
+               font-weight: 800;
+               color:$black;
+               margin-bottom: 20px;
+           }
+           .p2{
+               margin-bottom: 40px;
+           }
+           p{
+               word-spacing: 2.8px;
+               color: $black;
+           }
+           .happy-left-icon{
+               display: flex;
+               position: relative;
+               width: 100%;
+               .icon-left{
+                  i{
+                   margin-right: 5px;
+                   font-size: 28px;
+                   color: $orange;
+                  }
+                  .k{
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: $black;
+                  }
+                  .kikobo{
+                   font-size: 19px;
+                   color: $black;
+                   display: block;
+                   margin-left: 42px;
+                   margin-top: 7px;
+                 }
+               }
+               .icon-right{
+                position: absolute;
+                right: 15px;   
+
+                i{
+                   margin-right: 5px;
+                   font-size: 29px;
+                   color: $orange;
+                  }
+                  .k{
+                   font-size: 30px;
+                   font-weight: 700;
+                   color: $black;
+                  
+                 }
+                 .kikobo{
+                   font-size: 19px;
+                   color: $black;
+                   font-size: 19px;
+                   color: $black;
+                   display: block;
+                   margin-left: 42px;
+                   margin-top: 7px;
+                 }
+               }
+               
+           }
+       }
+
+
+
+       .happy-right{
+           width: 100%;
+           margin-top: -40px;
+           .blockquote-top{
+               margin-top: 10px;
+               .img{
+                   width: 70px;
+                   height: 70px;
+                   background: url('../images/happy\ customes/happy customes 2.jpg') no-repeat;
+                   background-size: cover;
+                   border-radius: 50%;
+                   display: inline-block;
+               }
+               .quote-text1{
+                display: inline-block;
+                position: absolute;
+                right: 80px;
+               }
+               i{
+                   color:$orange;
+               }
+               blockquote{
+                   width: 420px;
+                  
+                   q{
+                       color: $black;
+                   }
+                   .blockquote-footer{
+                       margin-top: 11px;
+                       color: $orange;
+                   }
+               }
+           }
+           .blockquote-bottom{
+               margin-top: 250px;
+               .img{
+                   width: 70px;
+                   height: 70px;
+                   border-radius: 50%;
+                   display: inline-block;
+                   background: url('../images/happy\ customes/happy customers 1.jpg') no-repeat;
+                   background-size: cover;
+               }
+               .quote-text1{
+                   display: inline-block;
+                   position: absolute;
+                   right: 80px;
+                   i{
+                       color:$orange;
+                   }
+                   blockquote{
+                       width: 420px;
+                       q{
+                           color: $black;
+                       }
+                       .blockquote-footer{
+                           margin-top: 11px;
+                           color: $orange;
+                       }
+                   }
+               }
+              
+           }
+       }
+   }
+}
+
+@media screen and (max-width:1600px) {
+   .happy-customers{
+       height: 520px;
+   }
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+
+  .happy-customers{
+
+   .container1{
+
+       .happy-left{
+
+           p{
+               width: 400px;
+           }
+       }
+       .happy-right{
+       position: absolute;
+        margin-left: -10px;
+        margin-top: -25px;
+        q{
+           width:400px;
+        }
+         
+       }
+   }
+  }
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (min-width:768px) and (max-width:991px){
+
+   .happy-customers{
+       height: 940px;
+
+    .container1{
+      display: block;
+        .happy-left{
+   
+            p{
+                width: 100%;
+                text-align: center;
+            }
+            h3{
+               text-align: center;
+            }
+        }
+
+
+        
+       .happy-right{
+           display: block;
+           width: 100%;
+       }
+       .one{
+           position: absolute;
+           margin-top: -150px;
+           left:145px;
+           
+           blockquote{
+               width: 100% !important;
+              
+              
+           }
+       }
+       .two{
+           margin-top: 85px;
+           left:145px;
+           position: absolute;
+           
+       }
+    }
+   }
+
+   q{
+       display: block;
+       width: 100%;
+   }
+   blockquote{
+       width: 100% !important;
+   }
+
+}
+
+
+
+
+@media only screen and (min-width:576px) and (max-width:767px){
+
+   .happy-customers{
+       height: 950px;
+       padding-top: 40px;
+       padding: 30px;
+
+    .container1{
+      display: block;
+        .happy-left{
+   
+            p{
+                width: 100%;
+                text-align: center;
+            }
+            h3{
+               text-align: center;
+            }
+        }
+
+
+        
+       .happy-right{
+           display: block;
+           width: 100%;
+       }
+       .one{
+           position: absolute;
+           margin-top: -150px;
+           left:65px;
+           
+           blockquote{
+               width: 100% !important;
+              
+              
+           }
+       }
+       .two{
+           margin-top: 85px;
+           left:65px;
+           position: absolute;
+           
+       }
+    }
+   }
+
+   q{
+       display: block;
+       width: 100%;
+   }
+   blockquote{
+       width: 100% !important;
+   }
+
+}
+
+
+
+
+
+@media only screen and (min-width:400px) and (max-width:575px){
+
+   .happy-customers{
+       height: 950px;
+       padding: 20px;
+
+    .container1{
+      display: block;
+        .happy-left{
+   
+            p{
+                width: 100%;
+                text-align: center;
+            }
+            h3{
+               text-align: center;
+            }
+        }
+
+
+        
+       .happy-right{
+           display: block;
+           width: 100%;
+       }
+       .one{
+           position: absolute;
+           margin-top: -150px;
+           left:45px;
+           
+           blockquote{
+               width: 100% !important;
+              
+              
+           }
+       }
+       .two{
+           margin-top: 85px;
+           left:45px;
+           position: absolute;
+           
+       }
+    }
+   }
+
+   q{
+       display: block;
+       width: 100%;
+   }
+   blockquote{
+       width: 100% !important;
+   }
+
+}
+
+
+
+
+
+@media only screen and (min-width:364px) and (max-width:399px){
+
+   .happy-customers{
+       height: 1110px;
+       padding: 20px;
+
+    .container1{
+      display: block;
+        .happy-left{
+   
+            p{
+                width: 100%;
+                text-align: center;
+            }
+            h3{
+               text-align: center;
+            }
+        }
+
+
+        
+       .happy-right{
+           display: block;
+           width: 100%;
+       }
+       .one{
+           position: absolute;
+           margin-top: -150px;
+           left:45px;
+           
+           blockquote{
+               width: 100% !important;
+              
+              
+           }
+       }
+       .two{
+           margin-top: 155px;
+           left:45px;
+           position: absolute;
+           
+       }
+    }
+   }
+
+   q{
+       display: block;
+       width: 100%;
+   }
+   blockquote{
+       width: 100% !important;
+   }
+
+}
+
+
+ 
+@media only screen and (min-width:280px) and (max-width:363px){
+
+   .happy-customers{
+       height: 90vh;
+       padding: 20px;
+
+    .container1{
+      display: block;
+        .happy-left{
+           .happy-left-icon{
+               display: block;
+
+               .icon-left{
+                   text-align: center;
+                   i{
+                       font-size: 22px;
+                   }
+                   .k{
+                       font-size: 25px;
+                   }
+                  
+                   .kikobo{
+                       margin-left: -5px;
+                   }
+               }
+               .icon-right{
+                   text-align: center;
+                   margin-right: 60px;
+                   margin-top: 14px;
+                   i{
+                       font-size: 22px;
+                   }
+                   .k{
+                       font-size: 25px;
+                   }
+                  
+                   .kikobo{
+                       margin-left: -5px;
+                   }
+               }
+           }
+          
+   
+            p{
+                width: 100%;
+                text-align: center;
+            }
+            h3{
+               text-align: center;
+            }
+        }
+
+
+        
+       .happy-right{
+           display: block;
+           width: 100%;
+           >.blockquote-bottom{
+               margin-top: 200px;
+           }
+       }
+       .one{
+           position: absolute;
+           margin-top: -80px;
+           left:45px;
+           
+           blockquote{
+               width: 100% !important;
+              
+              
+           }
+       }
+       .two{
+           margin-top: 275px;
+           left:45px;
+           position: absolute;
+           
+       }
+    }
+   }
+
+   q{
+       display: block;
+       width: 100%;
+   }
+   blockquote{
+       width: 100% !important;
+   }
+
+}

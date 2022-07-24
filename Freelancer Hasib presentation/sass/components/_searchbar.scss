@@ -1,0 +1,19 @@
+@mixin search-bar {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        border: 1px solid rgba(128, 128, 128, 0.144);
+        border-radius: 20px;
+        padding: 20px 20px;
+        >input{
+            border: none;
+            outline: none;
+            width: 150px;
+        }
+
+        > i{
+            color: $orange;
+            cursor: pointer;
+            padding: 0 3px 0 10px;
+        }
+    }

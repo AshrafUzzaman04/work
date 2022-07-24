@@ -1,0 +1,20 @@
+// -----  Base -----
+@import '../base/font-face';
+@import '../base/base';
+@import '../base/colors';
+@import '../base/measure';
+
+// ----- Components -----
+@import '../components/searchbar';
+@import '../components/buttons';
+
+// ----- Layouts ----- 
+@import '../layouts/header';
+@import '../layouts/aboutus';
+@import '../layouts/whatwedo';
+@import '../layouts/happycustomers';
+@import '../layouts/petlover';
+@import '../layouts/footer';
+
+
+

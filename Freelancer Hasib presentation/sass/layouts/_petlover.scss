@@ -1,0 +1,131 @@
+.petlovers{
+    width: 100%;
+    padding: 100px 68px;
+    background: url(https://raw.githubusercontent.com/webDeviloperHasib/responsive-typing-effect-website/main/Images/pet%20lovers/img1.jpg) fixed center no-repeat;
+    background-size: cover;
+    // background-position:abslute;
+    //background-repeat:not-repeat;
+    height: auto;
+
+    .container4{
+        padding: 30px 50px;
+
+
+        .main-content-lovers{
+              width: 600px;
+
+              p{
+                color:$white;
+                font-weight: 600;
+                letter-spacing: .8px;
+                word-spacing: 3px;
+                font-size: 12px;
+              }
+              h1{
+                color: $white;
+                font-size: 40px;
+                margin-bottom: 40px;
+              }
+              button{
+                padding:11px 27px;
+                opacity: 1;
+                color: green;
+                border-radius: 7px;
+                transition: .4s;
+                outline: none;
+                border: none;
+
+                &:hover{
+                    background-color: transparent;
+                    border: 2px solid $white;
+                    color: $white;
+                }
+              }
+
+        }
+    }
+
+}
+
+
+
+@media only screen and (max-width:900px){
+
+    .petlovers{
+        padding-left: 20px;
+        .container4{
+
+            .main-content-lovers{
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:780px){
+
+    .petlovers{
+        padding-left:10px 20px;
+        .container4{
+            padding: 10;
+            .main-content-lovers{
+               h1{
+                font-size: 35px;
+               }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:630px){
+
+    .petlovers{
+        padding-left:10px 20px;
+        .container4{
+            padding: 10;
+            .main-content-lovers{
+                width: 330px;
+               h1{
+                font-size: 25px;
+               }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:550px){
+
+    .petlovers{
+        padding-left:10px 20px;
+        .container4{
+            padding: 10px;
+            .main-content-lovers{
+                width: 330px;
+               h1{
+                font-size: 24px;
+               }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:350px){
+
+    .petlovers{
+        padding-left:10px 20px;
+        .container4{
+            padding: 10px;
+            .main-content-lovers{
+                width: 230px;
+                
+               h1{
+                font-size: 20px;
+                line-height: 30px;
+               }
+            }
+        }
+    }
+}
