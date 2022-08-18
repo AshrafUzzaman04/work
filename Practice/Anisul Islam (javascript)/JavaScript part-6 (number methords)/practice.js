@@ -25,7 +25,7 @@ console.log(n.toFixed(3));
 // -------take all the number------
 
 var n2 = 5.23456;
-console.log(n2.toPrecision(2));
+console.log(n2.toPrecision(3));
 
 // -------Convert from string to number-------
 

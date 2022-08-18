@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library functions for string.</title>
+  </head>
+  <body>
+    <script>
+      //  ----we can show the number of character using this code.----
+      var text = "Ashraf Uzzaman";
+      var len = text.length;
+
+      console.log(len);
+      console.log(text.charAt(5));
+      console.log(text.toUpperCase());
+      console.log(text.toLowerCase());
+
+      //   ----prompt----
+      var hellowBd = prompt("What is your name?");
+
+      document.write("Name of character is " + hellowBd.length);
+      document.write(hellowBd.charAt(2));
+
+      // -------- concatanation -------
+      var sum = " Hellow";
+      var sum2 = " Bangladeshi People";
+
+      console.log(sum + sum2);
+
+      var sum2 = sum2.slice(0, 11);
+
+      document.write(sum.concat(sum2));
+    </script>
+  </body>
+</html>
