@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 200px;
+  text-align: center;
+  margin: auto;
+}
+.main > .img {
+  display: block;
+}
+.main > .button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8px;
+}
+.main > .button > :first-child {
+  padding: 10px;
+  color: black;
+  border: none;
+  background-color: rgb(255, 173, 73);
+  border-radius: 4px;
+  font-weight: bold;
+}
+.main > .button > :last-child {
+  padding: 10px;
+  color: yellow;
+  border: none;
+  background-color: black;
+  border-radius: 4px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
