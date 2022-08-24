@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+  background-color: #31485e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fontFamily {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  color: white;
+}
+.header {
+  font-family: "Berkshire Swash", cursive;
+  position: relative;
+  cursor: pointer;
+  transition: 0.1s;
+  &:hover {
+    background-color: rgb(198, 229, 255);
+    border-radius: 8px 8px 0px 0px;
+  }
+  &::before {
+    content: "+";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 10px;
+  }
+}
+.details {
+  border-top: 2px solid #31485e;
+  max-height: 0;
+  overflow: hidden;
+  font-family: "Josefin Sans", sans-serif;
+  transition: 0.1s ease-in-out;
+}
+
+.active {
+  background-color: rgb(198, 229, 255);
+  border-radius: 8px 8px 0px 0px;
+  transition: 0.2s;
+  &::before {
+    content: "+";
+    transform: rotate(45deg);
+    transition: 0.2s;
+  }
+}
