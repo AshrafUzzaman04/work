@@ -1,0 +1,267 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.cvDownload {
+  --color: #4636bd;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+}
+.cvDownload::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+.cvDownload:hover {
+  color: #fff;
+}
+.cvDownload::before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+.cvDownload:hover::before {
+  top: -30px;
+  left: -30px;
+}
+.cvDownload:active::before {
+  background: #4636bd;
+  transition: background 0s;
+}
+
+.alwaysActive {
+  font-weight: 600;
+}
+
+.word {
+  color: white;
+  font: 700 normal 2.5em "tahoma";
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.message {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  display: block;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  position: absolute;
+  -webkit-animation: openclose 6s ease-in-out infinite;
+          animation: openclose 6s ease-in-out infinite;
+}
+
+.word1,
+.word2,
+.word3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@-webkit-keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 300px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 600px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 300px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 600px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 300px;
+  }
+  95% {
+    top: -9rem;
+    width: 700px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 300px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 600px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 300px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 600px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 300px;
+  }
+  95% {
+    top: -9rem;
+    width: 700px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: rgba(70, 54, 191, 0.2588235294);
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #000000;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: rgba(70, 54, 191, 0.2588235294);
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}/*# sourceMappingURL=style.css.map */
