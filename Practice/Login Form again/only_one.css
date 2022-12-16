@@ -1,0 +1,84 @@
+body {
+  background: #e3e3e3;
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+div.mainDiv {
+  width: 300px;
+  margin: 0 auto;
+  background: red;
+}
+.maivDiv {
+  background: white;
+  width: 330px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0px 5px 25px -5px black;
+}
+.sing_in {
+  background: #6fb554;
+  text-align: center;
+  color: white;
+  padding: 7px;
+  border-radius: 15px 15px 0px 0px;
+  text-shadow: 3px 4px 5px #1e1d1d;
+}
+.middelDiv {
+  padding: 30px;
+}
+.middelDiv input {
+  padding: 10px;
+  width: 82%;
+  background: #ebebeb;
+  border-radius: 71px;
+  border: none;
+  margin: 5px;
+}
+input {
+  border-radius: 71px;
+  border: none;
+  margin: 8px;
+  width: 100%;
+}
+div.forget {
+  float: right;
+  font-size: 11px;
+  margin: 5px;
+}
+span {
+  color: #a1a1a1;
+}
+a {
+  text-decoration: none;
+  color: #2a783e;
+}
+input.submit {
+  color: white;
+  background: linear-gradient(#8bc34a, #6fb554);
+  width: 95%;
+  margin-top: 12px;
+  padding: 8px;
+  border-radius: 134px;
+  cursor: wait;
+}
+input.submit:hover {
+  background: linear-gradient(#6fb554, #1fbf15);
+}
+div.footer {
+  text-align: center;
+  margin-top: 90px;
+  font-size: 12px;
+}
+div.question_span {
+  padding: 5px;
+}
+div.sing_updiv {
+  padding: 4px;
+  padding-bottom: 28px;
+}
+input {
+  padding-left: 27px !important;
+}
